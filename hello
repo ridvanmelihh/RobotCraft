@@ -1,0 +1,8 @@
+#!/bin/bash 
+folder='RobotCraft2019'
+cmd= 'ls -l ~/$folder | wc -l'
+if [$cmd -gt 5]; then
+        echo 'You have more than 5 files in folder:' $folder
+else
+        echo 'You have only '$cmd' files in folder:' $folder
+fi
